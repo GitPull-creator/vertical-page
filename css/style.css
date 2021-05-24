@@ -1,0 +1,191 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    font-family: 'TT Lakes';
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 18px 24px 32px 24px;
+    width: 320px;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.logo-btn {
+    width: 97px;
+    height: 51px;
+    border: none;
+    background: url("../icons/logo.svg")
+}
+
+.logo-btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.menu-bar__btn--burger {
+    background: url("../icons/burger.svg");
+}
+
+.menu-bar__btn--search {
+    background: url("../icons/search.svg");
+}
+
+/* Header */
+.menu-bar--position {
+    margin-bottom: 50px;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-bar__wrapper {
+    display: flex;
+    align-items: center;
+    width: 155px;
+    justify-content: space-between;
+}
+
+/* Menu */
+
+.center-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.center-menu__item {
+    padding-bottom: 32px;
+    display: inline-block;
+    list-style: none;
+}
+
+.center-menu__item--active::before {
+    content: "";
+    position: absolute;
+    height: 32px;
+    width: 4px;
+    left: -1px;
+    top: 121px;
+    background: #41F6D7;
+    border-radius: 35%;
+
+}
+
+.center-menu__link {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.center-menu__link:hover {
+    opacity: 0.7;
+}
+
+.center-menu__link--active {
+    color: rgba(126, 126, 130, 1);
+}
+
+
+/* Footer */
+
+.icons__item {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.footer__icons {
+    margin-bottom: 16px;
+}
+
+.icons__btn--chat-copy {
+    background: url("../icons/chat\ copy.svg");
+}
+
+.icons__btn--chat {
+    background: url("../icons/chat.svg");
+}
+
+.icons__btn--profile {
+    background: url("../icons/profile.svg");
+}
+
+.mail__link {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+.mail__link:hover {
+    opacity: 0.7;
+}
+
+.footer__mail {
+    margin-bottom: 12px;
+}
+
+.tel__link {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+    font-weight: 700;
+}
+
+.tel__link:hover {
+    opacity: 0.7;
+}
+
+.footer__tel {
+    margin-bottom: 40px;
+}
+
+.language-switcher__link {
+    display: inline-block;
+    margin-bottom: 7px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    font-weight: 500;
+}
+
+.language-switcher__link:hover {
+    opacity: 0.7;
+}
+
+.language-switcher__link--active {
+    color: rgba(126, 126, 130, 1);
+}
